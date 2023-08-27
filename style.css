@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Slab&display=swap');
+
+body {
+	font-family: "Roboto Condensed", serif;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 300px;
+}
+
+h1 {
+	font-family: "Roboto Slab", serif;
+	font-size: 36px;
+}
+
+p {
+	font-weight: 700;
+	font-size: 18px;
+}
