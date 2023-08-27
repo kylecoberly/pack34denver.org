@@ -2,17 +2,66 @@
 
 body {
 	font-family: "Roboto Condensed", serif;
-	text-align: center;
 	font-size: 16px;
-	padding-top: 300px;
+	line-height: 1.5;
+	padding: 12px;
+}
+
+#body-wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+section {
+	margin-bottom: 36px;
+}
+
+h1, .subheading {
+	text-align: center;
 }
 
 h1 {
 	font-family: "Roboto Slab", serif;
 	font-size: 36px;
+	margin-top: 24px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+
+.subheading {
+	font-size: 18px;
+	margin-bottom: 12px;
 }
 
 p {
-	font-weight: 700;
-	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+ul {
+	list-style: square;
+	margin-bottom: 20px;
+	list-style-position: inside;
+}
+
+ul ul {
+	padding-left: 24px;
+	margin-bottom: inherit;
+	list-style: circle;
 }
