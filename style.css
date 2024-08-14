@@ -65,3 +65,13 @@ ul ul {
 	margin-bottom: inherit;
 	list-style: circle;
 }
+
+figure {
+	display: inline-block;
+	text-align: center;
+	margin: 20px;
+}
+
+figcaption {
+	font-size: small;
+}
