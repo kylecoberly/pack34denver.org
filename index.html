@@ -136,8 +136,7 @@
   </div>
 
   <script>
-    const apiUrl = 'https://script.google.com/macros/s/AKfycbxeFN5YCH_8c8Lges-_BV-wCkA3WXtFwmfbM0-Q8mSuESrDjyl-Ngc4iYnAQz2GmxCD/exec';
-    const numEventsToShow = 10;
+    const apiUrl = 'https://script.google.com/macros/s/AKfycbw8rcwz19GOOVN179uB4eNuZqFS6a_SDDLiqV6o21eso8fT-OjST-xDWyVcJ2ZWa_iL/exec?daysInAdvance=90';
 
     const isSameDay = (date1, date2) => {
       return date1.getFullYear() === date2.getFullYear() &&
@@ -152,7 +151,7 @@
       const time = isSameDay(startTime, endTime) ?
         `${startTime.toLocaleDateString()} from ${startTime.toLocaleTimeString()} to ${endTime.toLocaleTimeString()}` :
         `${startTime.toLocaleString()} to ${endTime.toLocaleString()}`;
-      const location = event["location"] !== "None" ? ` at ${event["location"]}` : "";
+      const location = event["location"] ? ` at ${event["location"]}` : "";
       return `${title} - ${time}${location}`;
     };
     fetch(apiUrl)
