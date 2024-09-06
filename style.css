@@ -1,77 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Slab&display=swap");
 
 body {
-	font-family: "Roboto Condensed", serif;
-	font-size: 16px;
-	line-height: 1.5;
-	padding: 12px;
+  font-family: "Roboto Condensed", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 12px;
 }
 
 #body-wrapper {
-	max-width: 800px;
-	margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 section {
-	margin-bottom: 36px;
+  margin-bottom: 36px;
 }
 
-h1, .subheading {
-	text-align: center;
+h1,
+.subheading {
+  text-align: center;
 }
 
 h1 {
-	font-family: "Roboto Slab", serif;
-	font-size: 36px;
-	margin-top: 24px;
+  font-family: "Roboto Slab", serif;
+  font-size: 36px;
+  margin-top: 24px;
 }
 
 h2 {
-	font-size: 24px;
-	margin-top: 20px;
-	margin-bottom: 12px;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
 
 h3 {
-	font-weight: 700;
-	font-size: 18px;
-	margin-top: 20px;
-	margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
 
 .subheading {
-	font-size: 18px;
-	margin-bottom: 12px;
+  font-size: 18px;
+  margin-bottom: 12px;
 }
 
 p {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 iframe {
-	display: block;
-	margin: 0 auto;
-	max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 ul {
-	list-style: square;
-	margin-bottom: 20px;
-	list-style-position: inside;
+  list-style: square;
+  margin-bottom: 20px;
+  list-style-position: inside;
 }
 
 ul ul {
-	padding-left: 24px;
-	margin-bottom: inherit;
-	list-style: circle;
+  padding-left: 24px;
+  margin-bottom: inherit;
+  list-style: circle;
 }
 
 figure {
-	display: inline-block;
-	text-align: center;
-	margin: 20px;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
 }
 
 figcaption {
-	font-size: small;
+  font-size: small;
+}
+
+/* Tab Navigation */
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  margin-right: 5px;
+}
+
+.tab-link:hover,
+.tab-link:focus {
+  background-color: #ddd;
+}
+
+/* Tab Content */
+.tab-content {
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 15px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+/* Show default tab when no hash */
+.tab-pane:first-child {
+  display: block;
+}
+
+/* Show targeted tab */
+.tab-pane:target {
+  display: block;
+}
+
+/* Hide default tab when another is targeted */
+.tab-pane:target ~ .tab-pane:first-child {
+  display: none;
+}
+
+/* Active tab style */
+.tab-link:focus,
+.tab-pane:target
+  + .tab-nav
+  .tab-link[href^="#"]:not([href="#"]):not([href="#0"]) {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* JavaScript-enabled styles */
+.js .tab-pane {
+  display: none;
+}
+
+.js .tab-pane.active {
+  display: block;
+}
+
+.js .tab-link.active {
+  background-color: #fff;
+  border-bottom-color: #fff;
 }

@@ -1,183 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Cub Scout Pack 34 - Denver, CO</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Cub Scout Pack 34 - Denver, CO</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-  <div id="body-wrapper">
-    <h1>Cub Scout Pack 34</h1>
-    <p class="subheading">Denver, CO</p>
-    <figure>
-      <img src="img/logo.png" style="width: 20%; align-self: center" alt="Official Cub Scouts logo" />
-    </figure>
-    <p>Cub Scouts is a family-based program in which our Scouts have fun, learn skills and build their character,
-      as part of <a href="https://www.scouting.org/">Scouting America</a> (formerly Boy Scouts of America).</p>
-    <p>We are a large and active pack serving families (both boys and girls) in the general East Denver area. Cub Scouts
-      spans from Kinder thru 5th grade. Our pack welcomes all age-eligible youth -- no matter their gender, culture,
-      ethnicity, socioeconomic status, religion, ability, family background, or family structure -- who'll "do their
-      best" to follow the <a href="https://www.scouting.org/about/faq/question10/">Scout Oath and Law</a>.
-      You can learn more about Cub Scouts through the official <a
-        href="https://www.scouting.org/programs/cub-scouts/aims-and-methods">Aims & Methods</a>,
-      and <a href="https://www.scouting.org/wp-content/uploads/2023/07/512-73523WelcomeNewCSFamily_WEB.pdf">Family
-        Information Guide</a>.
-    </p>
-
-    <p>Contact us at <a href="mailto:pack34denver@gmail.com">pack34denver@gmail.com</a>.</p>
-
-    <section>
-      <h2>Meetings and Events</h2>
-      <p>Pack 34 meets at the <a href="https://goo.gl/maps/Lq29nHpGRcSPk4Yi9">Bill Roberts Elementary School</a>
-        cafeteria/field at 6:15pm on Monday evenings. The pack meets as large group approximately once a month, and as
-        smaller dens most weeks. Additionally, the pack organizes campouts, service projects, hikes, Pinewood Derby
-        races,
-        and other activities throughout the year.</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.6276393586204!2d-104.88841410968823!3d39.74801439821153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7c830e31320b%3A0x5386a047c319311a!2sWilliam%20Roberts%20Elementary!5e0!3m2!1sen!2sus!4v1693177374707!5m2!1sen!2sus"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <h3>Upcoming Pack Events</h3>
-      <div id="loading">Loading...</div>
-      <div id="error"></div>
-      <div id="events"></div>
-    </section>
-
-    <section>
-      <h2>Dens</h2>
-      <p>
-        Pack 34 is organized into dens, which are smaller groups of kids organized by grade.
-      </p>
-      <p>
-        On the advancement trail, a Cub Scout progresses towards a badge of rank based on their grade,
-        by doing a set of programmed activities, called "adventures".
-      </p>
+  <body>
+    <div id="body-wrapper">
+      <h1>Cub Scout Pack 34</h1>
+      <p class="subheading">Denver, CO</p>
       <figure>
-        <img src="https://www.scouting.org/wp-content/uploads/2024/06/2024-Cub-Scout-Rank-Chart.jpg"
-          style="width: 90%; align-self: center" alt="Chart of the six required adventures for each of the six ranks" />
-        <figcaption>
-          Get the <a href="https://www.scouting.org/wp-content/uploads/2024/06/2024-Cub-Scout-Rank-Chart.pdf">high
-            resolution PDF version</a>.
-        </figcaption>
+        <img
+          src="img/logo.png"
+          style="width: 20%; align-self: center"
+          alt="Official Cub Scouts logo"
+        />
       </figure>
+      <div class="tabs">
+        <nav class="tab-nav">
+          <a href="#welcome" class="tab-link">Welcome!</a>
+          <a href="#dens" class="tab-link">Dens & Advancement</a>
+          <a href="#costs" class="tab-link">Costs & Materials</a>
+          <a href="#leaders" class="tab-link">Becoming a Leader</a>
+        </nav>
 
-      <h3>🦁 Lions (Kindergarteners)</h3>
-      <p>See <a href="https://www.scouting.org/programs/cub-scouts/adventures/lion/">adventures</a>.</p>
+        <div class="tab-content">
+          <section id="welcome" class="tab-pane">
+            <p>
+              Cub Scouts is a family-based program in which our Scouts have fun,
+              learn skills and build their character, as part of
+              <a href="https://www.scouting.org/">Scouting America</a> (formerly
+              Boy Scouts of America).
+            </p>
+            <p>
+              We are a large and active pack serving families (both boys and
+              girls) in the general East Denver area. Cub Scouts spans from
+              Kinder thru 5th grade. Our pack welcomes all age-eligible youth --
+              no matter their gender, culture, ethnicity, socioeconomic status,
+              religion, ability, family background, or family structure --
+              who'll "do their best" to follow the
+              <a href="https://www.scouting.org/about/faq/question10/"
+                >Scout Oath and Law</a
+              >. You can learn more about Cub Scouts through the official
+              <a
+                href="https://www.scouting.org/programs/cub-scouts/aims-and-methods"
+                >Aims & Methods</a
+              >, and
+              <a
+                href="https://www.scouting.org/wp-content/uploads/2023/07/512-73523WelcomeNewCSFamily_WEB.pdf"
+                >Family Information Guide</a
+              >.
+            </p>
 
-      <h3>🐯 Tigers (First-graders)</h3>
-      <p>See <a href="https://www.scouting.org/programs/cub-scouts/adventures/tiger/">adventures</a>.</p>
+            <p>
+              Contact us at
+              <a href="mailto:pack34denver@gmail.com">pack34denver@gmail.com</a
+              >.
+            </p>
 
-      <h3>🐺 Wolves (Second-graders)</h3>
-      <p>See <a href="https://www.scouting.org/programs/cub-scouts/adventures/wolf/">adventures</a>.</p>
+            <h2>Meetings and Events</h2>
+            <p>
+              Pack 34 meets at the
+              <a href="https://goo.gl/maps/Lq29nHpGRcSPk4Yi9"
+                >Bill Roberts Elementary School</a
+              >
+              cafeteria/field at 6:15pm on Monday evenings. The pack meets as
+              large group approximately once a month, and as smaller dens most
+              weeks. Additionally, the pack organizes campouts, service
+              projects, hikes, Pinewood Derby races, and other activities
+              throughout the year.
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.6276393586204!2d-104.88841410968823!3d39.74801439821153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7c830e31320b%3A0x5386a047c319311a!2sWilliam%20Roberts%20Elementary!5e0!3m2!1sen!2sus!4v1693177374707!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
 
-      <h3>🐻 Bears (Third-graders)</h3>
-      <p>See <a href="https://www.scouting.org/programs/cub-scouts/adventures/bear/">adventures</a>.</p>
+            <h3>Upcoming Pack Events</h3>
+            <div id="loading">Loading...</div>
+            <div id="error"></div>
+            <div id="events"></div>
+          </section>
 
-      <h3>⚜️ Webelos (Fourth-graders)</h3>
-      <p>See <a href="https://www.scouting.org/programs/cub-scouts/adventures/webelos/">adventures</a>.</p>
+          <section id="dens" class="tab-pane">
+            <p>
+              Pack 34 is organized into dens, which are smaller groups of kids
+              organized by grade. Youth can join Cub Scouting at any age.
+            </p>
+            <p>
+              On the advancement trail, a Cub Scout progresses towards a badge
+              of rank based on their grade, by doing a set of programmed
+              activities, called "adventures".
+            </p>
+            <figure>
+              <img
+                src="https://www.scouting.org/wp-content/uploads/2024/06/2024-Cub-Scout-Rank-Chart.jpg"
+                style="width: 90%; align-self: center"
+                alt="Chart of the six required adventures for each of the six ranks"
+              />
+              <figcaption>
+                Get the
+                <a
+                  href="https://www.scouting.org/wp-content/uploads/2024/06/2024-Cub-Scout-Rank-Chart.pdf"
+                  >high resolution PDF version</a
+                >.
+              </figcaption>
+            </figure>
 
-      <h3>⚜️ Webelos Arrow of Light (Fifth-graders)</h3>
-      <p>See <a href="https://www.scouting.org/programs/cub-scouts/adventures/arrow-of-light/">adventures</a>.</p>
-    </section>
+            <h3>🦁 Lions (Kindergarteners)</h3>
+            <p>
+              See
+              <a
+                href="https://www.scouting.org/programs/cub-scouts/adventures/lion/"
+                >adventures</a
+              >.
+            </p>
 
-    <section>
-      <h2>Costs</h2>
-      <p>Our pack has a scholarship policy and our goal is that any family can participate regardless of their financial
-        situation. Reach out to us to know more about this.</p>
+            <h3>🐯 Tigers (First-graders)</h3>
+            <p>
+              See
+              <a
+                href="https://www.scouting.org/programs/cub-scouts/adventures/tiger/"
+                >adventures</a
+              >.
+            </p>
 
-      <h3>Dues</h3>
-      <p>Pack dues are $130 / program year (Aug - July), and <a
-          href="https://www.scouting.org/programs/cub-scouts/cost-of-cub-scouting">national Scouting America dues</a>
-        are $85/year.</p>
+            <h3>🐺 Wolves (Second-graders)</h3>
+            <p>
+              See
+              <a
+                href="https://www.scouting.org/programs/cub-scouts/adventures/wolf/"
+                >adventures</a
+              >.
+            </p>
 
-      <h3>Uniform</h3>
-      <p>Pack t-shirt (class B uniform), neckerchiefs, and slides are included with Pack 34 membership dues.</p>
-      <p>
-        Our pack suggests also obtaining a class A shirt, but other components are optional (hat, belt, pants, socks).
-        See the <a href="https://www.scouting.org/programs/cub-scouts/cub-scout-uniform/">Official uniform
-          descriptions</a>.
-      </p>
-      <p>
-        Uniforms can be acquired at:
-      <ul>
-        <li>The pack's exchange bin (at no cost, depending on availability)</li>
-        <li>Ebay/Facebook Marketplace</li>
-        <li><a href="https://scoutshop.org">scoutshop.org</a></li>
-        <li>In-person at the <a href="https://goo.gl/maps/jaX9pDLSWfteBAAM6">Scout Shop</a> in Lakewood</li>
-      </ul>
-      </p>
-      <p>
-        The required patches are the World Crest patch, Denver Area Council patch, "3" and "4" numerals in red and
-        white.
-        The Scout Shop can sew the patches for you on-site and they also sell shirts with some patches pre-sewn.
-        Another alternative is to use <a href="https://www.badgemagic.com/">Badge Magic</a> to glue them on.
-      </p>
+            <h3>🐻 Bears (Third-graders)</h3>
+            <p>
+              See
+              <a
+                href="https://www.scouting.org/programs/cub-scouts/adventures/bear/"
+                >adventures</a
+              >.
+            </p>
 
-      <h3>Materials</h3>
-      <p>
-        Den-specific handbooks are optional, and can be either:
-      <ul>
-        <li>Purchased from the pack, <a href="https://scoutshop.org">scoutshop.org</a>, or the <a
-            href="https://goo.gl/maps/jaX9pDLSWfteBAAM6">Scout Shop</a></li>
-        <li>Periodically borrowed from the pack (depending on availability)</li>
-      </ul>
-      </p>
-    </section>
-    <section>
-      <p>Have more questions? Contact us at <a href="mailto:pack34denver@gmail.com">pack34denver@gmail.com</a>.</p>
-    </section>
-  </div>
+            <h3>⚜️ Webelos (Fourth-graders)</h3>
+            <p>
+              See
+              <a
+                href="https://www.scouting.org/programs/cub-scouts/adventures/webelos/"
+                >adventures</a
+              >.
+            </p>
 
-  <script>
-    const apiUrl = 'https://script.google.com/macros/s/AKfycbw8rcwz19GOOVN179uB4eNuZqFS6a_SDDLiqV6o21eso8fT-OjST-xDWyVcJ2ZWa_iL/exec?daysInAdvance=90';
+            <h3>⚜️ Arrow of Light (Fifth-graders)</h3>
+            <p>
+              See
+              <a
+                href="https://www.scouting.org/programs/cub-scouts/adventures/arrow-of-light/"
+                >adventures</a
+              >.
+            </p>
+          </section>
 
-    const isSameDay = (date1, date2) => {
-      return date1.getFullYear() === date2.getFullYear() &&
-        date1.getMonth() === date2.getMonth() &&
-        date1.getDate() === date2.getDate();
-    };
+          <section id="costs" class="tab-pane">
+            <p>
+              Our pack has a scholarship policy and our goal is that any family
+              can participate regardless of their financial situation. Reach out
+              to us to know more about this.
+            </p>
 
-    const formatEvent = (event) => {
-      const title = event["title"];
-      const startTime = new Date(event["startTime"]);
-      const endTime = new Date(event["endTime"])
-      const time = isSameDay(startTime, endTime) ?
-        `${startTime.toLocaleDateString()} from ${startTime.toLocaleTimeString()} to ${endTime.toLocaleTimeString()}` :
-        `${startTime.toLocaleString()} to ${endTime.toLocaleString()}`;
-      const location = event["location"] ? ` at ${event["location"]}` : "";
-      return `${title} - ${time}${location}`;
-    };
-    fetch(apiUrl)
-      .then(response => response.text())
-      .then(responseText => JSON.parse(responseText)["events"])
-      .then(events => {
-        const loading = document.getElementById('loading');
-        loading.style.display = 'none'; // Hide loading indicator
+            <h3>Dues</h3>
+            <p>
+              Pack dues are $130 / program year (Aug - July), and
+              <a
+                href="https://www.scouting.org/programs/cub-scouts/cost-of-cub-scouting"
+                >national Scouting America dues</a
+              >
+              are $85/year.
+            </p>
 
-        const eventsContainer = document.getElementById('events')
-        events.forEach(event => {
-          const listItem = document.createElement('li');
-          listItem.textContent = formatEvent(event);
-          eventsContainer.appendChild(listItem);
+            <h3>Uniform</h3>
+            <p>
+              Pack t-shirt (class B uniform), neckerchiefs, and slides are
+              included with Pack 34 membership dues.
+            </p>
+            <p>
+              Our pack suggests also obtaining a class A shirt, but other
+              components are optional (hat, belt, pants, socks). See the
+              <a
+                href="https://www.scouting.org/programs/cub-scouts/cub-scout-uniform/"
+                >Official uniform descriptions</a
+              >.
+            </p>
+            <p>Uniforms can be acquired at:</p>
+            <ul>
+              <li>
+                The pack's exchange bin (at no cost, depending on availability)
+              </li>
+              <li>Ebay/Facebook Marketplace</li>
+              <li><a href="https://scoutshop.org">scoutshop.org</a></li>
+              <li>
+                In-person at the
+                <a href="https://goo.gl/maps/jaX9pDLSWfteBAAM6">Scout Shop</a>
+                in Lakewood
+              </li>
+            </ul>
+
+            <p>
+              The required patches are the World Crest patch, Denver Area
+              Council patch, "3" and "4" numerals in red and white. The Scout
+              Shop can sew the patches for you on-site and they also sell shirts
+              with some patches pre-sewn. Another alternative is to use
+              <a href="https://www.badgemagic.com/">Badge Magic</a> to glue them
+              on.
+            </p>
+
+            <h3>Materials</h3>
+            <p>Den-specific handbooks are optional, and can be either:</p>
+            <ul>
+              <li>
+                Purchased from the pack,
+                <a href="https://scoutshop.org">scoutshop.org</a>, or the
+                <a href="https://goo.gl/maps/jaX9pDLSWfteBAAM6">Scout Shop</a>
+              </li>
+              <li>
+                Periodically borrowed from the pack (depending on availability)
+              </li>
+            </ul>
+          </section>
+
+          <section id="leaders" class="tab-pane">
+            <section id="leader-positions">
+              <h2>Positions</h2>
+              <h3>Den Leaders</h3>
+              <p>
+                An adult, usually a parent, serves as a Den Leader. They carry
+                out the activities related to adventures as they are presented
+                in the Cub Scout's handbook and the Den Leader Guide.
+              </p>
+              <h3>Den Chiefs</h3>
+              <p>
+                A Den Chief is a Scout, Venturer or Sea Scout assisting a Cub
+                Scout den.
+              </p>
+              <h3>Cubmaster</h3>
+
+              <p>
+                The leader of the pack meeting is the Cubmaster. In addition to
+                serving as the master of ceremonies the Cubmaster provides
+                support to Den Leaders.
+              </p>
+
+              <h3>Pack Committee</h3>
+
+              <p>
+                Made up of parents, leaders, and other caring adults the pack
+                committee works to support den leaders and the cubmaster.
+              </p>
+
+              <h3>Pack Committee Chair</h3>
+
+              <p>
+                The top volunteer in the pack is the Pack Committee Chair. They
+                are responsible for ensuring enough qualified adult volunteers
+                are in place to provide the program. They lead the pack
+                committee meetings.
+              </p>
+
+              <h3>Chartered Organization</h3>
+
+              <p>
+                This is the organization that partners with the Boy Scouts of
+                America to deliver a Scouting program. They adopt Scouting to
+                serve the youth in the community.
+              </p>
+
+              <h3>Chartered Organization Representative</h3>
+
+              <p>
+                This person appoints the Pack Committee Chair and approves all
+                adult leaders. They provide resources from the chartered
+                organization.
+              </p>
+            </section>
+            <section id="leader-links">
+              <h2>Resources</h2>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.scouting.org/programs/cub-scouts/adult-leader-training"
+                    >How to become a Cub Scout leader?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/programs/cub-scouts/den-meeting-resources"
+                    >Den Meeting resources</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/training/youth/den-chief-training"
+                    >Den Chief training</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </section>
+        </div>
+      </div>
+      <section>
+        <p>
+          Have more questions? Contact us at
+          <a href="mailto:pack34denver@gmail.com">pack34denver@gmail.com</a>.
+        </p>
+      </section>
+    </div>
+
+    <script>
+      const apiUrl =
+        "https://script.google.com/macros/s/AKfycbw8rcwz19GOOVN179uB4eNuZqFS6a_SDDLiqV6o21eso8fT-OjST-xDWyVcJ2ZWa_iL/exec?daysInAdvance=90";
+
+      const isSameDay = (date1, date2) => {
+        return (
+          date1.getFullYear() === date2.getFullYear() &&
+          date1.getMonth() === date2.getMonth() &&
+          date1.getDate() === date2.getDate()
+        );
+      };
+
+      const formatEvent = (event) => {
+        const title = event["title"];
+        const startTime = new Date(event["startTime"]);
+        const endTime = new Date(event["endTime"]);
+        const time = isSameDay(startTime, endTime)
+          ? `${startTime.toLocaleDateString()} from ${startTime.toLocaleTimeString()} to ${endTime.toLocaleTimeString()}`
+          : `${startTime.toLocaleString()} to ${endTime.toLocaleString()}`;
+        const location = event["location"] ? ` at ${event["location"]}` : "";
+        return `${title} - ${time}${location}`;
+      };
+      fetch(apiUrl)
+        .then((response) => response.text())
+        .then((responseText) => JSON.parse(responseText)["events"])
+        .then((events) => {
+          const loading = document.getElementById("loading");
+          loading.style.display = "none"; // Hide loading indicator
+
+          const eventsContainer = document.getElementById("events");
+          events.forEach((event) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = formatEvent(event);
+            eventsContainer.appendChild(listItem);
+          });
+        })
+        .catch((error) => {
+          const loading = document.getElementById("loading");
+          loading.style.display = "none"; // Hide loading indicator
+
+          const errorMessage = document.getElementById("error");
+          errorMessage.textContent =
+            "Failed to load events. Please refresh the page to try again."; // Show error message
+
+          console.error("Error:", error);
         });
-      })
-      .catch(error => {
-        const loading = document.getElementById('loading');
-        loading.style.display = 'none'; // Hide loading indicator
 
-        const errorMessage = document.getElementById('error');
-        errorMessage.textContent = 'Failed to load events. Please refresh the page to try again.'; // Show error message
+      // Nicer navigation when JS is enabled
+      document.documentElement.className += " js";
+      function setActiveTab(hash) {
+        const tabLinks = document.querySelectorAll(".tab-link");
+        const tabPanes = document.querySelectorAll(".tab-pane");
+        const targetId = hash.replace("#", "");
 
-        console.error('Error:', error)
-      });
-  </script>
-</body>
+        tabLinks.forEach((link) => link.classList.remove("active"));
+        tabPanes.forEach((pane) => pane.classList.remove("active"));
 
+        if (targetId) {
+          const activeTab = document.querySelector(
+            `.tab-link[href="#${targetId}"]`
+          );
+          const activePane = document.getElementById(targetId);
+
+          if (activeTab && activePane) {
+            activeTab.classList.add("active");
+            activePane.classList.add("active");
+          }
+        } else {
+          // If no hash, activate the first tab
+          const firstTab = tabLinks[0];
+          const firstPane = tabPanes[0];
+
+          if (firstTab && firstPane) {
+            firstTab.classList.add("active");
+            firstPane.classList.add("active");
+          }
+        }
+      }
+
+      function initTabs() {
+        setActiveTab(window.location.hash);
+
+        const tabLinks = document.querySelectorAll(".tab-link");
+        tabLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const hash = this.getAttribute("href");
+            history.pushState(null, "", hash);
+            setActiveTab(hash);
+          });
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", initTabs);
+      window.addEventListener("hashchange", () =>
+        setActiveTab(window.location.hash)
+      );
+    </script>
+  </body>
 </html>
