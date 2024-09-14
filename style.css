@@ -67,6 +67,12 @@ ul ul {
   list-style: circle;
 }
 
+ol {
+  list-style: auto;
+  margin-bottom: 20px;
+  list-style-position: inside;
+}
+
 figure {
   display: inline-block;
   text-align: center;
